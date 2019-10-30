@@ -54,5 +54,5 @@ myAjax.interceptors.response.use(
   },
   () => {
     //后端挂掉或者前端跨域时候时候返回 
-     return  Notification.error({ title: '提示', message: '网络或请求异常，请稍后再试!', offset: 100 })
+       Notification.error({ title: '提示', message: '网络或请求异常，请稍后再试!', offset: 100 })
   })
