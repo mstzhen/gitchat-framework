@@ -2,14 +2,6 @@
   "name": "vue-cli3",
   "version": "0.1.0",
   "private": true,
-  // 原来
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "dev": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
-  // 修改
   "scripts": {
     "serve": "vue-cli-service serve --mode dev",
     "dev": "vue-cli-service serve --mode dev",
