@@ -6,7 +6,6 @@
 <script>
 
 export default {
-  name: 'itemPage2',
   data() {
     return {}
   }

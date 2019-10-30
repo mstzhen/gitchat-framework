@@ -45,9 +45,7 @@ myAjax.interceptors.response.use(
       return Promise.reject({ status: response.status, response: { data: response.data.error || '请求失败！' } })
     }
   },
-  error => {
+  () => {
     //后端接口异常或者后端服务挂掉或者前端跨域时候时候返回 
-    if (!error || !error.response) {
-      return Notification.error({ title: '提示', message: '网络或请求异常，请稍后再试!', offset: 100 }) 
-    }
+    return Notification.error({ title: '提示', message: '网络或请求异常，请稍后再试!', offset: 100 }) 
   })

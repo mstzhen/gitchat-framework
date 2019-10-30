@@ -52,7 +52,7 @@ myAjax.interceptors.response.use(
       return Promise.reject({ status: response.status, response: { data: response.data.err || '请求失败！' } })
     }
   },
-  error => {
+  () => {
     //后端挂掉或者前端跨域时候时候返回 
      return  Notification.error({ title: '提示', message: '网络或请求异常，请稍后再试!', offset: 100 })
   })

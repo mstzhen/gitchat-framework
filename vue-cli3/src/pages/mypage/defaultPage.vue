@@ -40,7 +40,6 @@
 <script>
 import testApi from '@/api/test'
 export default {
-  name: 'default',
   data() {
     return {
       activeName: 'first',
